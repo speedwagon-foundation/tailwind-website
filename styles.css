@@ -17,6 +17,9 @@
     --section-background-primary: rgba(222, 222, 222, 0.34);
     --section-background-secondary: rgba(166, 166, 166, 0.32);
 
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 * {
@@ -27,7 +30,6 @@
 
 body {
     font-family: Inter, sans-serif;
-    /*font-family: VT232, monospace;*/
 }
 
 /* -------------- Header -------------- */
@@ -40,6 +42,10 @@ nav > ul {
 
 .nav-header {
     background-color: var(--primary-300);
+}
+
+header {
+    box-shadow: var(--shadow-md);
 }
 
 header > div {
@@ -58,24 +64,55 @@ header > div {
     border-left: 3px var(--text-color) solid;
 }
 
-nav > ul > li {
-    display: block;
-}
-
 header .logo {
     padding-right: 1rem;
     max-height: 2.2rem;
 }
 
-header a {
-    color: var(--text-color);
-    text-decoration: none;
+nav li {
+    display: block;
+    padding: 7px 15px;
+    margin: 10px 10px;
+    background-color: #0369a1;
+    transform: skew(20deg);
+    transition: padding 0.1s ease-in-out;
 }
+
+nav li:hover {
+    padding: 7px 40px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    transform: skew(-20deg);
+    font-weight: 500;
+}
+
+
+
+
+/* whole body edgy */
+/*header .edgy::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    width: 120vw;*/
+/*    height: 100%;*/
+/*    transform: translate(-50%, -50%) rotate(-20deg) skew(-20deg);*/
+/*    z-index: -1;*/
+/*    background-color: var(--primary-500);*/
+/*}*/
 
 /* -------------- Content -------------- */
 
 main {
     width: 100%;
+}
+
+section {
     max-width: 66%;
     display: block;
     margin: 0 auto;
@@ -87,8 +124,9 @@ main {
     display: block;
     background-color: var(--section-background-primary);
     border-radius: 10px;
-    box-shadow: 5px 5px 14px 5px rgba(0,0,0,0.15);
+    box-shadow: 5px 5px 14px 5px rgba(0, 0, 0, 0.15);
 }
+
 .content-section h1 {
     color: var(--primary-600);
     padding-left: 0.4em;
@@ -110,8 +148,9 @@ main {
     width: 100%;
     height: 100%;
     border-radius: 2px;
-    border: #a3e635 dot-dash ;
+    border: #a3e635 dot-dash;
 }
+
 main section:first-child {
     margin-top: 3rem;
 }
@@ -119,6 +158,7 @@ main section:first-child {
 main section:not(:first-child) {
     margin-top: 1.5rem;
 }
+
 main section:nth-child(2n) {
     background-color: var(--section-background-secondary);
 }
