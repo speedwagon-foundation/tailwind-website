@@ -21,12 +21,13 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#versus">Classic CSS vs. Tailwind</a></li>
+                <li><a href="#origin">Tailwind origin</a></li>
                 <li><a href="#inline">Why not just inline CSS?</a></li>
                 <li><a href="#sensical">Sensical Defaults</a></li>
                 <li><a href="#responsive">What about Responsive Design?</a></li>
                 <li><a href="#config">Configuration</a></li>
+                <li><a href="#building">Building</a></li>
                 <li><a href="#opinion">Our Opinion 😎</a></li>
             </ul>
         </nav>
@@ -35,7 +36,7 @@
 <main>
     <section class="content-section">
         <header>
-            <h1 id="introduction">Introduction</h1>
+            <h1 id="versus">Classic CSS vs Tailwind</h1>
         </header>
         <div class="content">
             <p>While classic CSS follows the principle of defining the styling of a website in a separate CSS file,
@@ -47,38 +48,28 @@
                 classes to define how it should look. The widest spread implementation of this concept is called
                 TailwindCSS, on which the focus of this website will also be. </p>
             <div class="exampleContainer">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et
-                dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                sanctus
-                est Lorem ipsum dolor sit amet.
+                Example code standard vs tailwind
             </div>
         </div>
     </section>
     <section class="content-section">
         <header>
-            <h1 id="versus">Classic CSS vs Tailwind</h1>
+            <h1 id="origin">Tailwind origin</h1>
         </header>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et
-                dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                sanctus
-                est Lorem ipsum dolor sit amet.
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub
-                ergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-            <div class="exampleContainer">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et
-                dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                sanctus
-                est Lorem ipsum dolor sit amet.
-            </div>
+            <p>
+                Tailwind's Creator Adam Wathan created a Less stylesheet with lots of utility classes like "pad-x" for
+                his side projects back in 2015. Over multiple projects he kept refining it and after some discussion
+                with
+                his now business partner Steve Schoger and through community feedback he received while streaming,
+                Wathan decided in Spring of 2017 to polish his stylesheet enough to be able to open source it.
+                <br>
+                <br>
+                By late 2017 they released a first version of their stylesheet on Github and dubbed it Tailwind.
+                Fast-forward to May 2019 where they published version 1.0, their first big release. Over the years
+                Tailwind
+                has accumulated an astonishing amount of over 51 thousand stars on Github.
+            </p>
         </div>
     </section>
     <section class="content-section">
@@ -107,12 +98,7 @@
 
             </p>
             <div class="exampleContainer">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et
-                dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                sanctus
-                est Lorem ipsum dolor sit amet.
+                example code hover prefix
             </div>
         </div>
     </section>
@@ -129,14 +115,6 @@
                 overridden, so deciding later on to change the color palette for example can be easily done in the
                 accompanying config file.
             </p>
-            <div class="exampleContainer">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et
-                dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                sanctus
-                est Lorem ipsum dolor sit amet.
-            </div>
         </div>
     </section>
     <section class="content-section">
@@ -157,12 +135,7 @@
                 dark-mode. To set a style only for dark-mode, Tailwind provides the "dark:" prefix.
             </p>
             <div class="exampleContainer">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et
-                dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                sanctus
-                est Lorem ipsum dolor sit amet.
+                example code breakpoints
             </div>
         </div>
     </section>
@@ -177,13 +150,28 @@
                 explanation on what settings are changeable can be found in the
                 <a target="_blank" href="https://tailwindcss.com/docs/configuration"> Tailwind documentation</a>. </p>
             <div class="exampleContainer">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et
-                dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                sanctus
-                est Lorem ipsum dolor sit amet.
+                Example code configuration of something
             </div>
+        </div>
+    </section>
+    <section class="content-section">
+        <header>
+            <h1 id="building">Development Setup & Building</h1>
+        </header>
+        <div class="content">
+            <p>
+                To start developing websites with Tailwind, one must first download the Tailwind-package "tailwindcss"
+                via npm.
+                This will install the required files in the associated folders for the current project.
+                Afterwards a configuration file needs to be created which can be generated via the "npx tailwindcss
+                init" command.
+                The files in which tailwind classes will be used, must now be inserted into the configuration file.
+                At least one CSS file is required in which Tailwind's directives need to be inserted.
+                Through another command a watcher gets started that automatically generates a new output CSS file
+                whenever
+                there's a change to one of the source files. Only the generated output file needs to be included into
+                the website to make everything work.
+            </p>
         </div>
     </section>
     <section class="content-section">
@@ -204,14 +192,6 @@
                 apply its styles via a CSS file using the prefix "@apply" inside a CSS class, so we could still use
                 everything provided by Tailwind, while making use of the css selector we needed.
             </p>
-            <div class="exampleContainer">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et
-                dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                sanctus
-                est Lorem ipsum dolor sit amet.
-            </div>
         </div>
     </section>
 </main>
