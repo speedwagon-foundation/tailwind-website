@@ -38,6 +38,10 @@ nav > ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+   /* overflow-x: scroll;
+    overflow-y: hidden;*/
+    max-height: 10vw;
+
 }
 
 .nav-header {
@@ -134,10 +138,13 @@ section {
     padding-left: 0.4em;
     margin-bottom: 0.4em;
     padding-top: 0.5em;
+    scroll-margin-top: 9em;
 }
 
 .content p {
     margin-bottom: 1em;
+    line-height: 1.5em;
+    font-size: 1.1em;
 }
 
 .content {
@@ -159,6 +166,10 @@ main section:first-child {
 
 main section:not(:first-child) {
     margin-top: 1.5rem;
+}
+
+main section:last-child {
+    margin-bottom: 3em;
 }
 
 main section:nth-child(2n) {
