@@ -16,7 +16,7 @@
 
     --section-background-primary: rgba(222, 222, 222, 0.34);
     --section-background-secondary: rgba(166, 166, 166, 0.32);
-
+    scroll-behavior: smooth;
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -42,6 +42,8 @@ nav > ul {
 
 .nav-header {
     background-color: var(--primary-300);
+    position: sticky;
+    top: 0;
 }
 
 header {
