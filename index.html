@@ -47,8 +47,35 @@
                 then applying multiple styles to it in a separate CSS file, one can now utilize a mixture of those mini
                 classes to define how it should look. The widest spread implementation of this concept is called
                 TailwindCSS, on which the focus of this website will also be. </p>
-            <div class="exampleContainer">
-                Example code standard vs tailwind
+            <div class="two-item-grid-container">
+                <figure>
+                    <code>
+                        &lt;h1 class=&quot;header&quot;&gt;My header&lt;/h1&gt;<br/>
+                        &lt;h3 class=&quot;subheader&quot;&gt;My subheader&lt;/h3&gt;<br/>
+                        &lt;style&gt;<br/>
+                        &nbsp;&nbsp; &nbsp;.header {<br/>
+                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;margin: 0 auto;<br/>
+                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;color: rgb(156 163 175);<br/>
+                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;font-size: 1.875rem;<br/>
+                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;line-height: 2.25rem;<br/>
+                        &nbsp;&nbsp; &nbsp;}<br/>
+                        &nbsp;&nbsp; &nbsp;.subheader {<br/>
+                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;color: rgb(243 244 246);<br/>
+                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;margin: 0 auto;<br/>
+                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;font-size: 1.125rem;<br/>
+                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;line-height: 1.75rem;<br/>
+                        &nbsp;&nbsp; &nbsp;}<br/>
+                        &lt;/style&gt;
+                    </code>
+                    <figcaption>Standard CSS</figcaption>
+                </figure>
+                <figure>
+                    <code>
+                        &lt;h1 class=&quot;mx-auto text-gray-400 text-3xl&quot;&gt;My header&lt;/h1&gt;<br/>
+                        &lt;h3 class=&quot;mx-auto text-gray-100 text-lg&quot;&gt;My subheader&lt;/h3&gt;
+                    </code>
+                    <figcaption>Tailwind CSS</figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -97,8 +124,17 @@
                 In the same spirit styles can now also only be added when the screen size exceeds a certain breakpoint.
 
             </p>
-            <div class="exampleContainer">
-                example code hover prefix
+            <div class="single-example-container">
+                <figure>
+                    <code>
+                        &lt;button class=&quot;bg-sky-500 hover:bg-sky-200<br />
+                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hover:scale-125 ease-in<br />
+                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;duration-300&quot;&gt;<br />
+                        &nbsp;&nbsp; &nbsp;Click me!<br />
+                        &lt;/button&gt;
+                    </code>
+                    <figcaption>Hover example</figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -134,8 +170,17 @@
                 in recent years:
                 dark-mode. To set a style only for dark-mode, Tailwind provides the "dark:" prefix.
             </p>
-            <div class="exampleContainer">
-                example code breakpoints
+            <div class="single-example-container">
+               <figure>
+                    <code>
+                        &lt;div class=&quot;grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4&quot;&gt;<br />
+                        &nbsp;&nbsp; &lt;div&gt;item 1&lt;/div&gt;<br />
+                        &nbsp;&nbsp; &lt;div&gt;item 2&lt;/div&gt;<br />
+                        &nbsp;&nbsp; &lt;div&gt;item 3&lt;/div&gt;<br />
+                        &lt;/div&gt;
+                    </code>
+                   <figcaption>Breakpoints for different amount of Columns</figcaption>
+               </figure>
             </div>
         </div>
     </section>
@@ -149,8 +194,17 @@
                 padding/margin, font family, colors, and much more can all be adjusted one by one. A detailed
                 explanation on what settings are changeable can be found in the
                 <a target="_blank" href="https://tailwindcss.com/docs/configuration"> Tailwind documentation</a>. </p>
-            <div class="exampleContainer">
-                Example code configuration of something
+            <div class="single-example-container">
+                <figure>
+                    <code>
+                        module.exports = { &nbsp;<br />
+                        &nbsp;&nbsp; &nbsp;content: [&quot;./src/**/*.{html,js}&quot;], &nbsp;<br />
+                        &nbsp;&nbsp; &nbsp;theme: { &nbsp; &nbsp;extend: {}, &nbsp;},<br />
+                        &nbsp;&nbsp; &nbsp;plugins: [],<br />
+                        }
+                    </code>
+                    <figcaption>Default configuration </figcaption>
+                </figure>
             </div>
         </div>
     </section>
