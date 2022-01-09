@@ -178,7 +178,6 @@ main section:last-child {
 
 .code-block {
     font-size: 1.1rem;
-    /*overflow: hidden;*/
 }
 
 .code-block > div {
