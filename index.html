@@ -44,7 +44,7 @@
             <p>While classic CSS follows the principle of defining the styling of a website in a separate CSS file,
                 utility based CSS takes a different approach by applying the styles directly where they are needed in
                 the HTML. Utility based in this context means that there are a wide variety of mini classes which often
-                only include one CSS property in them. These mini classes can be for example a class called "flex" which
+                only include one CSS property in them.<br><br> These mini classes can be for example a class called "flex" which
                 only includes the "display: flex;" property. So now rather than adding one class for an HTML element and
                 then applying multiple styles to it in a separate CSS file, one can now utilize a mixture of those mini
                 classes to define how it should look. The widest spread implementation of this concept is called
@@ -73,17 +73,22 @@
                 </figure>
                 <figure>
 <pre class="language-html"><code>
-    &lt;h1 class=&quot;mx-auto text-gray-400 text-3xl&quot;&gt;My header&lt;/h1&gt;<br/>
-    &lt;h3 class=&quot;mx-auto text-gray-100 text-lg&quot;&gt;My subheader&lt;/h3&gt;
+    &lt;h1 class=&quot;mx-auto text-gray-400 text-3xl&quot;&gt;
+        <br>My header<br>
+    &lt;/h1&gt;<br/>
+    &lt;h3 class=&quot;mx-auto text-gray-100 text-lg&quot;&gt;
+        <br>My subheader<br>
+    &lt;/h3&gt;
 </code></pre>
                     <figcaption>Tailwind CSS</figcaption>
                 </figure>
             </div>
         </div>
     </section>
+    <section class="highlight"></section>
     <section class="content-section">
         <header>
-            <h1 id="origin">Tailwind origin</h1>
+            <h1 id="origin">Tailwind Origin</h1>
         </header>
         <div class="content">
             <p>
@@ -101,33 +106,39 @@
             </p>
         </div>
     </section>
-    <section class="content-section">
-        <header>
-            <h1 id="inline">Why not just inline CSS?</h1>
-        </header>
-        <div class="content">
-            <p>At first sight, this all seems like it is just a fancy way of doing inline CSS, and yes while it kind of
-                is, utility based CSS has numerous advantages.
-                <br>
-                <br>
-                For one using classes instead of directly applying a style enhances the readability of the code by a
-                fair bit. This approach furthermore still retains the benefit of being able to infer the styling of the
-                HTML tag without referring to the associated CSS File.
-                <br>
-                <br>
-                Utility based CSS also enables various CSS features that otherwise would not be possible. Anything that
-                conditionally changes the styling of a tag like "hover" or "focus" is not feasible with inline CSS.
-                To apply a class only when a certain condition is met, Tailwind provides prefixes which define when it
-                should be applied.
-                <br>
-                <br>
-                These prefixes furthermore also enable the use of media queries to create a cohesive and responsive
-                webpage.
-                In the same spirit styles can now also only be added when the screen size exceeds a certain breakpoint.
+    <section class="content-section highlight">
+        <div>
+            <header>
+                <h1 id="inline">Why not just inline CSS?</h1>
+            </header>
+            <div class="content">
+                <p>At first sight, this all seems like it is just a fancy way of doing inline CSS, and yes while it kind
+                    of
+                    is, utility based CSS has numerous advantages.
+                    <br>
+                    <br>
+                    For one using classes instead of directly applying a style enhances the readability of the code by a
+                    fair bit. This approach furthermore still retains the benefit of being able to infer the styling of
+                    the
+                    HTML tag without referring to the associated CSS File.
+                    <br>
+                    <br>
+                    Utility based CSS also enables various CSS features that otherwise would not be possible. Anything
+                    that
+                    conditionally changes the styling of a tag like "hover" or "focus" is not feasible with inline CSS.
+                    To apply a class only when a certain condition is met, Tailwind provides prefixes which define when
+                    it
+                    should be applied.
+                    <br>
+                    <br>
+                    These prefixes furthermore also enable the use of media queries to create a cohesive and responsive
+                    webpage.
+                    In the same spirit styles can now also only be added when the screen size exceeds a certain
+                    breakpoint.
 
-            </p>
-            <div class="single-example-container">
-                <figure>
+                </p>
+                <div class="single-example-container">
+                    <figure>
 <pre>
 <code class="language-html">
     &lt;button class=&quot;bg-sky-500 hover:bg-sky-200<br/>
@@ -137,8 +148,9 @@
     &lt;/button&gt;
 </code>
 </pre>
-                    <figcaption>Hover example</figcaption>
-                </figure>
+                        <figcaption>Hover example</figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </section>
@@ -157,25 +169,29 @@
             </p>
         </div>
     </section>
-    <section class="content-section">
-        <header>
-            <h1 id="responsive">What about responsive design?</h1>
-        </header>
-        <div class="content">
-            <p>As is has already quickly been alluded to before, with Tailwind it is possible to easily implement a
-                responsive design for a website. By default, there are five breakpoints available ranging from small to
-                large.
-                Of course those can also be modified to the developers liking. It is important to note that Tailwind
-                utilizes a mobile first approach. This means that a style that is defined without a prefixed breakpoint
-                is valid until it gets overridden by a style that has a breakpoint attached to it.
-                <br>
-                <br>
-                On the topic of responsive design, Tailwind also offers support for a feature that has gained traction
-                in recent years:
-                dark-mode. To set a style only for dark-mode, Tailwind provides the "dark:" prefix.
-            </p>
-            <div class="single-example-container">
-                <figure>
+    <section class="content-section highlight">
+        <div>
+            <header>
+                <h1 id="responsive">What about responsive design?</h1>
+            </header>
+            <div class="content">
+                <p>As is has already quickly been alluded to before, with Tailwind it is possible to easily implement a
+                    responsive design for a website. By default, there are five breakpoints available ranging from small
+                    to
+                    large.
+                    Of course those can also be modified to the developers liking. It is important to note that Tailwind
+                    utilizes a mobile first approach. This means that a style that is defined without a prefixed
+                    breakpoint
+                    is valid until it gets overridden by a style that has a breakpoint attached to it.
+                    <br>
+                    <br>
+                    On the topic of responsive design, Tailwind also offers support for a feature that has gained
+                    traction
+                    in recent years:
+                    dark-mode. To set a style only for dark-mode, Tailwind provides the "dark:" prefix.
+                </p>
+                <div class="single-example-container">
+                    <figure>
 <pre>
 <code class="language-html">
     &lt;div class=&quot;grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4&quot;&gt;<br/>
@@ -185,8 +201,9 @@
     &lt;/div&gt;
 </code>
 </pre>
-                    <figcaption>Breakpoints for different amount of Columns</figcaption>
-                </figure>
+                        <figcaption>Breakpoints for different amount of Columns</figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </section>
@@ -216,6 +233,7 @@
             </div>
         </div>
     </section>
+    <section class="highlight"></section>
     <section class="content-section">
         <header>
             <h1 id="building">Development Setup & Building</h1>
@@ -236,24 +254,46 @@
             </p>
         </div>
     </section>
-    <section class="content-section">
-        <header>
-            <h1 id="opinion">Our Opinion 😎</h1>
-        </header>
-        <div class="content">
-            <p>After working with Tailwind for some time we noticed just how much time it was saving us. We no longer
-                had to think of arbitrary class names and could just add exactly the styles that we needed. There are
-                also
-                lots of classes that help a lot with styling like the shadows for example.
-                <br>
-                <br>
-                There are however still some things where we had to rely on self written CSS classes to avoid
-                duplication.
-                Since the Tailwind classes need to be applied directly to a tag, it gets clustered really easily if have
-                to add the same classes to each tag over and over again. In its defense, Tailwind does however allow to
-                apply its styles via a CSS file using the prefix "@apply" inside a CSS class, so we could still use
-                everything provided by Tailwind, while making use of the css selector we needed.
-            </p>
+    <section class="content-section highlight">
+        <div>
+            <header>
+                <h1 id="opinion">Our Opinion 😎</h1>
+            </header>
+            <div class="content">
+                <p>After working with Tailwind for some time we noticed just how much time it was saving us. We no
+                    longer
+                    had to conceive arbitrary class names and could just add exactly the styles that we needed. There
+                    are
+                    also lots of classes that help a lot with styling like the shadows for example.
+                    <br>
+                    <br>
+                    The default colour scheme is excellent and we think it is absolutely beautiful, same goes for the
+                    shadows which create a smoother, more elegant shadow by stacking multiple shadows above each other.
+                    <br>
+                    <br>
+                    A potential concern might be maintainability; let's say one were to change up the color theme of a
+                    product. Would you have to change every class in the code containing the color? No. Tailwind allows
+                    to
+                    configure a color theme via the <span class="italics">tailwind.config.js</span> file. Same goes for
+                    layout breakpoints, shadows, dark theme, spacing, etc.
+
+                    <!--                thoughts: an external framework to prevent repetition of classes ad absurdum.
+                                        thriving community, makes it easy to get help if somethings not working correctly
+                                        -->
+                    <br>
+                    <br>
+                    There are however still some things where we had to rely on self written CSS classes to avoid
+                    duplication. If you prefer a more granular control of transitions and animations, then writing them
+                    in
+                    pure CSS might be preferable.
+                    Since the Tailwind classes need to be applied directly to a tag, it gets clustered really easily if
+                    have
+                    to add the same classes to each tag over and over again. In its defense, Tailwind does however allow
+                    to
+                    apply its styles via a CSS file using the prefix "@apply" inside a CSS class, so we could still use
+                    everything provided by Tailwind, while making use of the css selector we needed.
+                </p>
+            </div>
         </div>
     </section>
 </main>
