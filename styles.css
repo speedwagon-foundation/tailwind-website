@@ -144,7 +144,7 @@ section h1 {
 .content a:hover {
     background: var(--green-gradient);
     text-decoration: none;
-    color: #eeeaea;
+    color: #fff;
 }
 
 .content span.code {
