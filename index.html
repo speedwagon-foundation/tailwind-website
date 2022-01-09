@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Tailwind CSS | Utility Based CSS</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
@@ -43,46 +43,47 @@
         <div class="content">
             <p>While classic CSS follows the principle of defining the styling of a website in a separate CSS file,
                 utility based CSS takes a different approach by applying the styles directly where they are needed in
-                the HTML. Utility based in this context means that there are a wide variety of <span class="bold">mini classes</span> which often
+                the HTML. Utility based in this context means that there are a wide variety of <span class="bold">mini classes</span>
+                which often
                 only include one CSS property in them.<br><br> These mini classes can be for example a class called
-                "flex" which
-                only includes the "display: flex;" property. So now rather than adding one class for an HTML element and
+                <span class="code">flex</span> which
+                only includes the <span class="code">display: flex;</span> property. So now rather than adding one class
+                for an HTML element and
                 then applying multiple styles to it in a separate CSS file, one can now utilize a mixture of those mini
                 classes to define how it should look. The widest spread implementation of this concept is called
                 <span class="bold">TailwindCSS</span>, on which the focus of this website will also be. </p>
-            <div class="two-item-grid-container">
-                <figure>
-                    <pre><code class="language-html">
-    &lt;h1 class=&quot;header&quot;&gt;My header&lt;/h1&gt;<br/>
-    &lt;h3 class=&quot;subheader&quot;&gt;My subheader&lt;/h3&gt;<br/>
-    &lt;style&gt;<br/>
-    &nbsp;&nbsp; &nbsp;.header {<br/>
-    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;margin: 0 auto;<br/>
-    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;color: rgb(156 163 175);<br/>
-    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;font-size: 1.875rem;<br/>
-    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;line-height: 2.25rem;<br/>
-    &nbsp;&nbsp; &nbsp;}<br/>
-    &nbsp;&nbsp; &nbsp;.subheader {<br/>
-    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;color: rgb(243 244 246);<br/>
-    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;margin: 0 auto;<br/>
-    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;font-size: 1.125rem;<br/>
-    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;line-height: 1.75rem;<br/>
-    &nbsp;&nbsp; &nbsp;}<br/>
-    &lt;/style&gt;
-</code></pre>
-                    <figcaption>Standard CSS</figcaption>
-                </figure>
-                <figure>
-<pre class="language-html"><code>
-    &lt;h1 class=&quot;mx-auto text-gray-400 text-3xl&quot;&gt;
-        <br>My header<br>
-    &lt;/h1&gt;<br/>
-    &lt;h3 class=&quot;mx-auto text-gray-100 text-lg&quot;&gt;
-        <br>My subheader<br>
-    &lt;/h3&gt;
-</code></pre>
-                    <figcaption>Tailwind CSS</figcaption>
-                </figure>
+            <div class="single-example-container code-block">
+                <div>
+<pre><code class="language-html">&lt;h1 class=&quot;header&quot;&gt;My header&lt;/h1&gt;<br/>
+&lt;h3 class=&quot;subheader&quot;&gt;My subheader&lt;/h3&gt;<br/>
+&lt;style&gt;<br/>
+&nbsp;&nbsp; &nbsp;.header {<br/>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;margin: 0 auto;<br/>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;color: rgb(156 163 175);<br/>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;font-size: 1.875rem;<br/>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;line-height: 2.25rem;<br/>
+&nbsp;&nbsp; &nbsp;}<br/>
+&nbsp;&nbsp; &nbsp;.subheader {<br/>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;color: rgb(243 244 246);<br/>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;margin: 0 auto;<br/>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;font-size: 1.125rem;<br/>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;line-height: 1.75rem;<br/>
+&nbsp;&nbsp; &nbsp;}<br/>
+&lt;/style&gt;</code></pre>
+                </div>
+                <p>Standard CSS</p>
+            </div>
+
+            <div class="single-example-container code-block">
+                <div>
+<pre class="language-html"><code>&lt;h1 class=&quot;mx-auto text-gray-400 text-3xl&quot;&gt;
+    <br>My header<br>
+&lt;/h1&gt;<br/>
+&lt;h3 class=&quot;mx-auto text-gray-100 text-lg&quot;&gt;
+    <br>My subheader<br>
+&lt;/h3&gt;</code></pre>
+                </div>
+                <p>Tailwind CSS</p>
             </div>
         </div>
     </section>
@@ -93,11 +94,13 @@
         </header>
         <div class="content">
             <p>
-                Tailwind's Creator Adam Wathan created a Less stylesheet with lots of utility classes like "pad-x" for
+                Tailwind's Creator Adam Wathan created a Less stylesheet with lots of utility classes like <span
+                    class="code">pad-x</span> for
                 his side projects back in 2015. Over multiple projects he kept refining it and after some discussion
                 with
                 his now business partner Steve Schoger and through community feedback he received while streaming,
-                Wathan decided in spring of 2017 to polish his stylesheet enough to be able to <span class="bold">open source</span> it.
+                Wathan decided in spring of 2017 to polish his stylesheet enough to be able to <span class="bold">open source</span>
+                it.
                 <br>
                 <br>
                 By late 2017 they released a first version of their stylesheet on Github and dubbed it Tailwind.
@@ -118,41 +121,43 @@
                     is, utility based CSS has numerous advantages.
                     <br>
                     <br>
-                    For one using classes instead of directly applying a style enhances the <span class="bold">readability</span> of the code by a
-                    fair bit. This approach furthermore still retains the benefit of being able to <span class="bold">infer the styling</span> of
+                    For one using classes instead of directly applying a style enhances the <span class="bold">readability</span>
+                    of the code by a
+                    fair bit. This approach furthermore still retains the benefit of being able to <span class="bold">infer the styling</span>
+                    of
                     the
                     HTML tag without referring to the associated CSS File.
                     <br>
                     <br>
                     Utility based CSS also enables various CSS features that otherwise would not be possible. Anything
                     that
-                    conditionally changes the styling of a tag like "hover" or "focus" is not feasible with inline CSS.
-                    To apply a class only when a certain condition is met, Tailwind provides <span class="bold">prefixes</span> which define when
+                    conditionally changes the styling of a tag like <span class="code">hover</span> or <span
+                            class="code">focus</span> is not feasible with inline CSS.
+                    To apply a class only when a certain condition is met, Tailwind provides <span
+                            class="bold">prefixes</span> which define when
                     it
                     should be applied.
                     <br>
                     <br>
-                    These prefixes furthermore also enable the use of <span class="bold">media queries</span> to create a cohesive and responsive
+                    These prefixes furthermore also enable the use of <span class="bold">media queries</span> to create
+                    a cohesive and responsive
                     webpage.
                     In the same spirit styles can now also only be added when the screen size exceeds a certain
                     breakpoint.
 
                 </p>
-                <div class="single-example-container">
-                    <figure>
-<pre>
-<code class="language-html">
-    &lt;button class=&quot;bg-sky-500 hover:bg-sky-200<br/>
-    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hover:scale-125 ease-in<br/>
-    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;duration-300&quot;&gt;<br/>
-    &nbsp;&nbsp; &nbsp;Click me!<br/>
-    &lt;/button&gt;
-</code>
-</pre>
-                        <figcaption>Hover example</figcaption>
-                    </figure>
+                <div class="single-example-container code-block">
+                    <div>
+<pre><code class="language-html">&lt;button class=&quot;bg-sky-500 hover:bg-sky-200<br/>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hover:scale-125 ease-in<br/>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;duration-300&quot;&gt;<br/>
+&nbsp;&nbsp; &nbsp;Click me!<br/>
+&lt;/button&gt;</code></pre>
+                    </div>
+                    <p>Hover example</p>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <section class="content-section">
@@ -164,8 +169,10 @@
                 For anyone wanting to get started right away with developing a website, tailwind provides a wide variety
                 of <span class="bold"> predefined
                 colors, breakpoints, font-sizes</span> and much more out of the box. These allow for quick development
-                without having to worry about the same basic things over and over again. All of these settings <span class="bold">can be
-                overridden</span>, so deciding later on to change the color palette for example can be easily done in the
+                without having to worry about the same basic things over and over again. All of these settings <span
+                    class="bold">can be
+                overridden</span>, so deciding later on to change the color palette for example can be easily done in
+                the
                 accompanying config file.
             </p>
         </div>
@@ -176,34 +183,32 @@
                 <h1 id="responsive">What about responsive design?</h1>
             </header>
             <div class="content">
-                <p>As is has already quickly been alluded to before, with Tailwind it is possible to easily implement a
+                <p>As has already been alluded to, Tailwind makes it is possible to easily implement a
                     responsive design for a website. By default, there are five breakpoints available ranging from small
                     to
                     large.
                     Of course those can also be modified to the developers liking. It is important to note that Tailwind
-                    utilizes a <span class="bold">mobile first</span> approach. This means that a style that is defined without a prefixed
+                    utilizes a <span class="bold">mobile first</span> approach. This means that a style that is defined
+                    without a prefixed
                     breakpoint
                     is valid until it gets overridden by a style that has a breakpoint attached to it.
                     <br>
                     <br>
-                    On the topic of responsive design, Tailwind also offers support for a feature that has gained
+                    On the topic of responsive design Tailwind also offers support for a feature that has gained
                     traction
                     in recent years:
-                    <span class="bold">dark-mode</span>. To set a style only for dark-mode, Tailwind provides the "dark:" prefix.
+                    <span class="bold">dark-mode</span>. To set a style only for dark-mode Tailwind provides the
+                    <span class="code">dark:</span> prefix.
                 </p>
-                <div class="single-example-container">
-                    <figure>
-<pre>
-<code class="language-html">
-    &lt;div class=&quot;grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4&quot;&gt;<br/>
-    &nbsp;&nbsp; &lt;div&gt;item 1&lt;/div&gt;<br/>
-    &nbsp;&nbsp; &lt;div&gt;item 2&lt;/div&gt;<br/>
-    &nbsp;&nbsp; &lt;div&gt;item 3&lt;/div&gt;<br/>
-    &lt;/div&gt;
-</code>
-</pre>
-                        <figcaption>Breakpoints for different amount of Columns</figcaption>
-                    </figure>
+                <div class="single-example-container code-block">
+                    <div>
+<pre><code class="language-html">&lt;div class=&quot;grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4&quot;&gt;<br/>
+&nbsp;&nbsp; &lt;div&gt;item 1&lt;/div&gt;<br/>
+&nbsp;&nbsp; &lt;div&gt;item 2&lt;/div&gt;<br/>
+&nbsp;&nbsp; &lt;div&gt;item 3&lt;/div&gt;<br/>
+&lt;/div&gt;</code></pre>
+                    </div>
+                    <p>Breakpoints for different amount of Columns</p>
                 </div>
             </div>
         </div>
@@ -214,23 +219,22 @@
         </header>
         <div class="content">
             <p>Through the included config file Tailwind can be customized to the developers liking. Like other modern
-                tools Tailwind's config file is <span class="bold">written in JSON</span>. To name a few settings that can be changed:
-                padding/margin, font family, colors, and much more can all be adjusted one by one. A detailed
-                explanation on what settings are changeable can be found in the
+                tools Tailwind's config file is <span class="bold">written in JSON</span>; to name a few settings that
+                can be changed
+                <span class="code">padding</span>/<span class="code">margin</span>, <span
+                        class="code">font-family</span>, <span class="code">color</span>, and many more can all be
+                adjusted granularly. A detailed
+                explanation on which are changeable can be found in the
                 <a target="_blank" href="https://tailwindcss.com/docs/configuration"> Tailwind documentation</a>. </p>
-            <div class="single-example-container">
-                <figure>
-<pre>
-<code class="language-js">
-    module.exports = { &nbsp;<br/>
-    &nbsp;&nbsp; &nbsp;content: [&quot;./src/**/*.{html,js}&quot;], &nbsp;<br/>
-    &nbsp;&nbsp; &nbsp;theme: { &nbsp; &nbsp;extend: {}, &nbsp;},<br/>
-    &nbsp;&nbsp; &nbsp;plugins: [],<br/>
-    }
-</code>
-</pre>
-                    <figcaption>Default configuration</figcaption>
-                </figure>
+            <div class="single-example-container code-block">
+                <div>
+<pre><code class="language-js">module.exports = { &nbsp;<br/>
+&nbsp;&nbsp; &nbsp;content: [&quot;./src/**/*.{html,js}&quot;], &nbsp;<br/>
+&nbsp;&nbsp; &nbsp;theme: { &nbsp; &nbsp;extend: {}, &nbsp;},<br/>
+&nbsp;&nbsp; &nbsp;plugins: [],<br/>
+}</code></pre>
+                </div>
+                <p>Default configuration</p>
             </div>
         </div>
     </section>
@@ -241,16 +245,18 @@
         </header>
         <div class="content">
             <p>
-                To start developing websites with Tailwind, one must first download the <span class="bold">Tailwind-package "tailwindcss"
+                To start developing websites with Tailwind, one must first download the <span class="bold">Tailwind-package <span
+                    class="code">tailwindcss</span>
                 via npm</span>.
                 This will install the required files in the associated folders for the current project.
-                Afterwards a configuration file needs to be created which can be generated via the <span class="bold">"npx tailwindcss
-                init"</span> command.
+                Afterwards a configuration file needs to be created which can be generated via the <span class="code">npx tailwindcss
+                init</span> command. <br> <br>
                 The files in which tailwind classes will be used, must now be inserted into the configuration file.
-                At least one CSS file is required in which Tailwind's directives need to be inserted.
-                Through another command a watcher gets started that automatically generates a new output CSS file
-                whenever
-                there's a change to one of the source files. <span class="bold">Only the generated output file</span> needs to be included into
+                At least one CSS file is required in which Tailwind's directives need to be included.
+                Tailwind's CLI tools provide a just-in-time compiler with which any changes automatically get included
+                in the output file. Once this process is started, no further actions have to be taken.
+                there's a change to one of the source files. <span class="bold">Only the generated output file</span>
+                needs to be included into
                 the website to make everything work.
             </p>
         </div>
@@ -263,36 +269,46 @@
             <div class="content">
                 <p>After working with Tailwind for some time we noticed just how much time it was saving us. We no
                     longer
-                    had to <span class="bold">conceive arbitrary class names</span> and could just add exactly the styles that we needed. There
-                    are
-                    also lots of classes that help a lot with styling like the shadows for example.
-                    <br>
-                    <br>
-                    The default colour scheme is excellent and absolutely beautiful, same goes for the
+                    had to <span class="bold">conceive arbitrary class names</span> and could just add exactly the
+                    styles that we needed.
+                    The excellent default settings like the provided color scheme are excellent and absolutely
+                    beautiful. Same goes for the
                     shadows which create a smoother, more elegant shadow by stacking multiple shadows above each other.
                     <br>
                     <br>
-                    A potential concern might be <span class="bold">maintainability</span>; let's say one were to change up the color theme of a
+                    A potential concern might be <span class="bold">maintainability</span>; let's say one were to change
+                    up the color theme of a
                     product. Would you have to change every class in the code containing the color? No. Tailwind allows
                     to
-                    configure a color theme via the <span class="italics">tailwind.config.js</span> file. Same goes for
-                    layout breakpoints, shadows, dark theme, spacing, etc.
+                    configure a color theme via the <span class="code">tailwind.config.js</span> file. Same goes for
+                    layout breakpoints, shadows, dark theme, spacing, etc. making it actually a godsend for
+                    customizability.
 
                     <!--                thoughts: an external framework to prevent repetition of classes ad absurdum.
                                         thriving community, makes it easy to get help if somethings not working correctly
                                         -->
                     <br>
                     <br>
-                    There are however still some things where we had to <span class="bold">rely on self written CSS</span> classes to avoid
+                    There are however still some things where we had to <span
+                            class="bold">rely on self written CSS</span> classes to avoid
                     duplication. If you prefer a more granular control of transitions and animations, then writing them
                     in
                     pure CSS might be preferable.
-                    Since the Tailwind classes need to be applied directly to a tag, it gets <span class="bold">clustered really easily</span> if you
+                    Since the Tailwind classes need to be applied directly to a tag, it gets <span class="bold">cluttered rather easily</span>
+                    if you
                     have
                     to add the same classes to each tag over and over again. In its defense, Tailwind does however allow
                     to
-                    apply its styles via a CSS file using the <span class="bold">directive "@apply"</span> inside a CSS class, so we could still use
+                    apply its styles via a CSS file using the <span class="bold">directive <span
+                            class="code">@apply</span></span> inside a CSS
+                    class, so we could still use
                     everything provided by Tailwind, while making use of the css selector we needed.
+                    <br>
+                    <br>
+                    Furthermore any sensical person would use components to build a website preventing any notion potential class contamination.
+                    <br>
+                    <br>
+                    All in all utility based CSS is the <span class="bold">future</span>, and we wouldn't want it any other way.
                 </p>
             </div>
         </div>
